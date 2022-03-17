@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'user',
+    loadChildren: () => import('./tabs/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./tabs/main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./tabs/search/search.module').then( m => m.SearchPageModule)
+  },
 ];
 
 @NgModule({
