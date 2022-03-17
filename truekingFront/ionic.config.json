@@ -1,0 +1,7 @@
+{
+  "name": "truekingFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
