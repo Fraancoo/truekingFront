@@ -1,0 +1,40 @@
+ion-icon {
+    font-size: 24px;
+    color: #707070;
+}
+
+.top {
+    margin-top: 20px;
+    text-align: center;
+    column-count: 2;
+}
+
+.photo {
+    width: 175px;
+    border-radius: 45%;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    font-size: 20pt;
+}
+
+.row-stuff {
+    margin-left: 7.5px;
+    column-count: 3;
+    height: 150px;
+}
+
+.card {
+    height: 150px;
+    width: 100px;
+}
+
+.addStuff {
+    height: 150px;
+    width: 100px;
+    background-color: #08B7FC;
+    color: #fff;
+    text-align: center;
+}
