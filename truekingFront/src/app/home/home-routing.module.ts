@@ -21,14 +21,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/home/user',
+        redirectTo: '/home/main',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/home/user',
+    redirectTo: '/home/main',
     pathMatch: 'full'
   }
 ];

@@ -1,0 +1,24 @@
+.text {
+    font-style: italic;
+    color: #707070;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7.5px;
+    margin: 0px 7px 0px 7px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #08B7FC;
+}
+
+.stuff {
+    padding: 10px;
+    width: 100%;
+}
