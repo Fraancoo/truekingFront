@@ -22,7 +22,43 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./tabs/search/search.module').then( m => m.SearchPageModule)
+  },  {
+    path: 'information',
+    loadChildren: () => import('./trade/information/information.module').then( m => m.InformationPageModule)
   },
+  {
+    path: 'tradding',
+    loadChildren: () => import('./trade/tradding/tradding.module').then( m => m.TraddingPageModule)
+  },
+  {
+    path: 'request',
+    loadChildren: () => import('./trade/request/request.module').then( m => m.RequestPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./account/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register1',
+    loadChildren: () => import('./account/register1/register1.module').then( m => m.Register1PageModule)
+  },
+  {
+    path: 'register2',
+    loadChildren: () => import('./account/register2/register2.module').then( m => m.Register2PageModule)
+  },
+  {
+    path: 'add',
+    loadChildren: () => import('./item/add/add.module').then( m => m.AddPageModule)
+  },
+  {
+    path: 'edit',
+    loadChildren: () => import('./item/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'view',
+    loadChildren: () => import('./item/view/view.module').then( m => m.ViewPageModule)
+  },
+
 ];
 
 @NgModule({

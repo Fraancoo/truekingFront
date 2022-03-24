@@ -1,0 +1,54 @@
+ion-content {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.labels {
+    text-align: start;
+    margin: 25px;
+}
+
+.label {
+    margin-top: 15px;
+    border: solid 1px #909090;
+    border-radius: 5px;
+}
+
+.small-label {
+    border: solid 1px #909090;
+    border-radius: 5px;
+}
+
+.row {
+    column-count: 2;
+}
+
+.checkbox {
+    color: #909090;
+    margin: 25px 15px 15px 15px;
+}
+
+.button {
+    width: calc(100% - 50px);
+    height: 40px;
+    background: none;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+.dark-button {
+    background-color: #006DFF;
+    color: #fff;
+}
+
+hr {
+    background: #707070;
+    margin: 0px 15px 10px 15px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}

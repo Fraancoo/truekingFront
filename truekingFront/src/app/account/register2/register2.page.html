@@ -1,0 +1,25 @@
+<ion-content>
+  <br><svg xmlns="http://www.w3.org/2000/svg" width="161" height="47" viewBox="0 0 161 47">
+    <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
+  </svg>
+  <div class="labels">
+    <p>Address information</p>
+    <ion-input class="label" type="text" placeholder="Country"></ion-input>
+    <ion-input class="label" type="text" placeholder="State"></ion-input>
+    <ion-input class="label" type="text" placeholder="City"></ion-input>
+    <div class="row" style="margin-top: 15px;">
+      <ion-input class="small-label" type="text" placeholder="Address line 1"></ion-input>
+      <ion-input class="small-label" type="text" placeholder="Address line 2"></ion-input>
+    </div>
+    <ion-input class="label" type="password" placeholder="Zipcode"></ion-input>
+    <ion-textarea class="label" type="text" placeholder="Aditional details"></ion-textarea>
+    <div class="checkbox">
+      <ion-checkbox checked="false"></ion-checkbox>
+      <span style="margin-left: 10px;">I accept to sell my soul to the devil</span>
+    </div>
+  </div>
+  <div class="bottom">
+    <hr>
+    <button class="button dark-button" [routerLink]="['/home']">Register</button>
+  </div>
+</ion-content>

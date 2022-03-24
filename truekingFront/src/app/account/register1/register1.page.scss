@@ -1,0 +1,46 @@
+ion-content {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.labels {
+    text-align: start;
+    margin: 25px;
+}
+
+.label {
+    margin-top: 15px;
+    border: solid 1px #909090;
+    border-radius: 5px;
+}
+
+.small-label {
+    border: solid 1px #909090;
+    border-radius: 5px;
+}
+
+.row {
+    column-count: 3;
+}
+
+.button {
+    width: calc(100% - 50px);
+    height: 40px;
+    background: none;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+.photo {
+    // border: solid 2px #909090;
+    background-color: #e6e6e6;
+    font-size: 15pt;
+    color: #3f3f3f;
+    margin-bottom: 15px;
+    height: 120px;
+}
+
+.dark-button {
+    background-color: #006DFF;
+    color: #fff;
+}

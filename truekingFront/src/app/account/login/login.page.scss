@@ -1,0 +1,41 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+ion-content {
+    text-align: center;
+}
+
+.logo {
+    margin-top: 120px;
+    width: 150px;
+}
+
+.labels {
+    text-align: start;
+    margin: 25px;
+}
+
+.label {
+    margin-top: 15px;
+    border: solid 1px #909090;
+    border-radius: 5px;
+}
+
+.button {
+    width: calc(100% - 50px);
+    height: 40px;
+    background: none;
+    border: solid 1px #006DFF;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+.light-button {
+    color: #006DFF;
+}
+
+.dark-button {
+    background-color: #006DFF;
+    color: #fff;
+}
