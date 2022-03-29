@@ -16,10 +16,10 @@
   </div>
   <div class="row-stuff">
     <!-- <div class="addStuff"> Add stuff </div> -->
-    <div class="card addStuff">
+    <button class="card addStuff" [routerLink]="['/add']">
       <ion-icon name="add-circle-outline"></ion-icon>
-    </div>
-    <div>
+    </button>
+    <div (click)="viewItem()">
       <img class="card" src="../../../assets/img/stuff_1.jpg">
     </div>
     <div>

@@ -1,0 +1,49 @@
+ion-content {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.labels {
+    text-align: start;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.title {
+    font-size: 18pt;
+}
+
+.text {
+    font-size: 14pt;
+}
+
+.button {
+    padding: 10px 32px 10px 32px;
+    margin: 15px;
+    height: 40px;
+    background: none;
+    border: 2px solid #006DFF;
+    border-radius: 5px;
+    font-size: 12pt;
+    color: #006DFF;
+}
+
+.photo {
+    background-color: #e6e6e6;
+    font-size: 15pt;
+    color: #3f3f3f;
+    margin-top: 25px;
+    height: 125px;
+}
+
+.dark-button {
+    background-color: #006DFF;
+    color: #fff;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}

@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Add item</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div (click)="home()">
+    <br><svg xmlns="http://www.w3.org/2000/svg" width="161" height="47" viewBox="0 0 161 47">
+      <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
+    </svg>
+  </div>
+  <button class="button photo">Take a photo</button>
+  <ion-item>
+    <p class="label">Tags:</p>
+    <button class="tag">x | Sports</button>
+    <button class="tag">x | Furniture</button>
+  </ion-item>
+  <ion-item class="scrolling-wrapper">
+    <button class="tag">+ | Old</button>
+    <button class="tag">+ | New</button>
+    <button class="tag">+ | Used</button>
+    <button class="tag">+ | Gardening</button>
+    <button class="tag">+ | Tech</button>
+  </ion-item>
+  <div class="labels">
+    <p class="label">What do you want to trade?</p>
+    <ion-input class="input" type="text"></ion-input>
+    
+    <p class="label">Why do you want to trade it?</p>
+    <ion-textarea class="input" type="text"></ion-textarea>
 
+    <p class="label">What do you want in return?</p>
+    <ion-input class="input" type="text"></ion-input>
+  </div>
+  <div class="bottom">
+    <button class="button dark-button" [routerLink]="['/home/user']">Add item</button>
+  </div>
 </ion-content>
