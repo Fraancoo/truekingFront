@@ -1,0 +1,85 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.trueking {
+    text-align: center;
+}
+
+.no-lines {
+    --border-width: 0;
+    --inner-border-width: 0;
+    --padding-bottom: 0;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    padding-left: 10px;
+    grid-column: 2 / 4;
+}
+
+.smallImage {
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 14pt;
+}
+
+.text {
+    font-size: 12pt;
+}
+
+.big-text {
+    font-size: 24pt;
+    color: #707070;
+    font-family: 'Lato', sans-serif;
+}
+
+.row {
+    margin-left: 7.5px;
+    column-count: 3;
+}
+
+.gallery {
+    height: 150px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bottom {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.dark-button {
+    width: calc(100% - 50px);
+    height: 40px;
+    background: none;
+    border-radius: 5px;
+    font-size: 12pt;
+    background-color: #006DFF;
+    color: #fff;
+}
+
+.selected {
+    border: solid 3px #006DFF;
+}

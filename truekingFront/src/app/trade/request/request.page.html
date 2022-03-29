@@ -1,9 +1,52 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>request</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="trueking" [routerLink]="['/home']">
+    <br><svg xmlns="http://www.w3.org/2000/svg" width="161" height="47" viewBox="0 0 161 47">
+      <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
+    </svg>
+  </div>
+
+  <ion-item class="no-lines">
+    <ion-label class="big-text">You are going to trade...</ion-label>
+  </ion-item>
+
+  <div class="card">
+    <div class="left">
+      <img class="smallImage" src="../../../assets/img/stuff_1.jpg"/>
+    </div>
+    <div class="right">
+      <p class="title">Lorem Ipsum</p>
+      <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+  </div>
+
+  <ion-item class="no-lines">
+    <ion-label class="big-text">For your...</ion-label>
+  </ion-item>
+
+  <div class="row">
+    <div>
+      <img class="gallery selected" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div>
+      <img class="gallery" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div>
+      <img class="gallery" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div>
+      <img class="gallery" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div>
+      <img class="gallery" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div>
+      <img class="gallery" src="../../../assets/img/stuff_1.jpg">
+    </div>
+  </div>
+
+  <div class="bottom">
+    <hr>
+    <button class="dark-button" [routerLink]="['/home']">Send trading offer</button>
+  </div>
 
 </ion-content>
