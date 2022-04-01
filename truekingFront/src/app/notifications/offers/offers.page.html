@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="trueking" [routerLink]="['/home']">
+    <br><svg xmlns="http://www.w3.org/2000/svg" width="161" height="47" viewBox="0 0 161 47">
+      <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
+    </svg>
+  </div>
+  <ion-item class="no-lines">
+    <ion-label class="big-text">Tradding offers...</ion-label>
+  </ion-item>
+  <div class="notification" (click)="seeOffer()">
+    <div class="left">
+      <img class="photo" src="https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png">
+    </div>
+    <div class="right">
+      <p class="title">Item name (item owner)</p>
+      <p class="text">Item description</p>
+    </div>
+  </div>
+  <div class="notification myOffer">
+    <div class="left">
+      <img class="photo" src="../../../assets/img/stuff_1.jpg">
+    </div>
+    <div class="right">
+      <p class="title">Item name (yours)</p>
+      <p class="text">Item description</p>
+    </div>
+  </div>
+</ion-content>

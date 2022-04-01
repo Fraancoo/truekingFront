@@ -58,6 +58,18 @@ const routes: Routes = [
     path: 'view',
     loadChildren: () => import('./item/view/view.module').then( m => m.ViewPageModule)
   },
+  {
+    path: 'offers',
+    loadChildren: () => import('./notifications/offers/offers.module').then( m => m.OffersPageModule)
+  },
+  {
+    path: 'offer',
+    loadChildren: () => import('./notifications/offer/offer.module').then( m => m.OfferPageModule)
+  },
+  {
+    path: 'information',
+    loadChildren: () => import('./notifications/information/information.module').then( m => m.InformationPageModule)
+  },
 
 ];
 

@@ -1,0 +1,53 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.trueking {
+    text-align: center;
+}
+
+.no-lines {
+    --border-width: 0;
+    --inner-border-width: 0;
+    --padding-bottom: 0;
+}
+
+.big-text {
+    font-size: 24pt;
+    color: #707070;
+    font-family: 'Lato', sans-serif;
+}
+
+.photo {
+    padding: 10px;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.notification {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.myOffer {
+    background-color: #d3d3d3;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2 / 4;
+}

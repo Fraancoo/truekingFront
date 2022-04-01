@@ -1,0 +1,79 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+hr {
+    margin: 0px 20px 0px 20px;
+    background-color: #dadada;
+}
+
+.trueking {
+    text-align: center;
+}
+
+.itemInfo {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.itemPhoto {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    height: 350px;
+}
+
+.itemDesc {
+    padding: 0px 10px 0px 10px;
+}
+
+.title {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.userInfo {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.photo {
+    padding: 10px;
+    border-radius: 100%;
+    width: 40%;
+    height: 150px;
+}
+
+.no-lines {
+    --border-width: 0;
+    --inner-border-width: 0;
+    --padding-bottom: 0;
+}
+
+.big-text {
+    font-size: 24pt;
+    color: #707070;
+    font-family: 'Lato', sans-serif;
+}
+
+.button {
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+.dark-button {
+    background-color: #006DFF;
+    color: #fff;
+}
+
+.bottom {
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0px 25px 0px;
+}
