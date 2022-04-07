@@ -1,37 +1,21 @@
 <ion-content>
   <ion-item class="no-lines">
-    <ion-label class="gray big-text light-text">Near your home...</ion-label>
+    <ion-label class="gray big-text light-text">You'd like...</ion-label>
   </ion-item>
   <ion-item class="no-lines">
     <!-- SLIDER -->
-    <ion-slides>
-      <ion-slide>
+    <ion-slides style="height: 100%;">
+      <ion-slide *ngFor="let i of items">
         <div>
-          <img src="../../../assets/img/stuff_1.jpg" />
-          <strong class="gray">Lorem Ipsum</strong>
-          <p class="gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-      </ion-slide>
-      <ion-slide>
-        <div>
-          <img src="../../../assets/img/stuff_1.jpg" />
-          <strong class="gray">Lorem Ipsum</strong>
-          <p class="gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-      </ion-slide>
-      <ion-slide>
-        <div>
-          <img src="../../../assets/img/stuff_1.jpg" />
-          <strong class="gray">Lorem Ipsum</strong>
-          <p class="gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <img class="img" src="{{i.photo}}" />
+          <strong class="gray">{{i.name}}</strong>
+          <p class="gray">{{i.description}}</p>
+          <div class="center">
+            <button class="button light-button">See more</button>
+            <button class="button dark-button" (click)="requestTrade(i.id)">Lets trade!</button>
+          </div>
         </div>
       </ion-slide>
     </ion-slides>
-  </ion-item>
-  <ion-item class="no-lines">
-    <div class="center" style="position: absolute;">
-      <button class="button light-button">See more</button>
-      <button class="button dark-button" (click)="requestTrade()">Lets trade!</button>
-    </div>
   </ion-item>
 </ion-content>

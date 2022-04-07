@@ -8,9 +8,10 @@
     </div>
   </div>
   <div style="text-align: center;">
-    <img class="photo" src="../../../assets/img/pp.jpeg"/>
+    <img class="photo" src="{{user.photo}}"/>
   </div>
-  <div class="text" style="text-align: center;">John Smith</div>
+  <div class="text" style="text-align: center;">{{user.firstName}}</div>
+  <div class="text" style="text-align: center;">{{user.lastName}}</div>
   <div class="text" style="margin-left: 15px;">
     <p>Your stuff</p>
   </div>
@@ -19,19 +20,17 @@
     <button class="card addStuff" [routerLink]="['/add']">
       <ion-icon name="add-circle-outline"></ion-icon>
     </button>
-    <div (click)="viewItem()">
-      <img class="card" src="../../../assets/img/stuff_1.jpg">
-    </div>
-    <div>
-      <img class="card" src="../../../assets/img/stuff_1.jpg">
+    <div (click)="viewItem()" *ngFor="let i of user.items">
+      <img class="card" src="{{i.photo}}">
     </div>
   </div>
   <div class="text" style="margin-left: 15px;">
     <p>Your traded stuff</p>
   </div>
+  <div *ngIf="user.tradedItems == 0" style="color: #dadada; margin: 20px;">Nothing yet...</div>
   <div class="row-stuff">
-    <div>
-      <img class="card" src="../../../assets/img/stuff_1.jpg">
+    <div *ngFor="let i of user.tradedItems">
+      <img class="card" src="{{i.photo}}">
     </div>
   </div>
   <br>

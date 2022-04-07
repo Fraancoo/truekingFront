@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { ItemsService } from '../../services/items.service';
 
 @Component({
   selector: 'app-main',
@@ -8,13 +9,19 @@ import {Router} from '@angular/router';
 })
 export class MainPage implements OnInit {
 
-  constructor(private route:Router) { }
+  public items: Array<any> = [];
+
+  constructor(private route:Router, private itemService:ItemsService ) {
+    this.itemService.getItems().subscribe((res : any) => {
+      this.items = res;
+    });
+  }
 
   ngOnInit() {
   }
 
-  requestTrade(){
-    this.route.navigate(['/request']);
+  requestTrade(id: any){
+    this.route.navigate(['/request/'+id]);
   }
 
 }

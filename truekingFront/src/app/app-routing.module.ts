@@ -22,7 +22,8 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./tabs/search/search.module').then( m => m.SearchPageModule)
-  },  {
+  },
+  {
     path: 'information',
     loadChildren: () => import('./trade/information/information.module').then( m => m.InformationPageModule)
   },
@@ -31,7 +32,7 @@ const routes: Routes = [
     loadChildren: () => import('./trade/tradding/tradding.module').then( m => m.TraddingPageModule)
   },
   {
-    path: 'request',
+    path: 'request/:id',
     loadChildren: () => import('./trade/request/request.module').then( m => m.RequestPageModule)
   },
   {
