@@ -18,8 +18,35 @@ export class RequestsService {
       bidderID: bidderID,
       ownerID: ownerID,
     }).subscribe((res: any) => {
-      console.log(res);
       this.router.navigate(['/']);
+    });
+  }
+
+  getRequest(id:any) {
+    let header = new HttpHeaders()
+      .set('Type-content', 'aplication/json');      
+    
+    return this.http.get(this.url+'/'+id, {
+      headers: header
+    });
+  }
+  
+  getRequestsFromUser(id:any) {
+    let header = new HttpHeaders()
+      .set('Type-content', 'aplication/json');      
+    
+    return this.http.get(this.url+'/user/'+id, {
+      headers: header
+    });
+  }
+
+  updateRequest(id:any, status:any, bidderItem: any, ownerItem: any) {
+    this.http.put(this.url+'/'+id, {
+      status: status,
+      bidderItem: bidderItem.id,
+      ownerItem: ownerItem.id
+    }).subscribe((res: any) => {
+      this.router.navigate(['/offers']);
     });
   }
 }

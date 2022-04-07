@@ -11,6 +11,7 @@ hr {
 }
 
 .itemInfo {
+    text-align: center;
     margin-top: 20px;
     width: 100%;
 }
@@ -57,11 +58,14 @@ hr {
 }
 
 .button {
-    width: 80%;
+    margin: 0px 5px 0px 5px;
+    width: 40%;
     height: 40px;
-    background-color: black;
+    background: none;
+    border: solid 1px #006DFF;
     border-radius: 5px;
-    font-size: 12pt;
+    font-size: 14pt;
+    color: #006DFF;
 }
 
 .dark-button {

@@ -26,11 +26,9 @@ export class RequestPage implements OnInit {
   ngOnInit() {
     this.itemService.getItem(this.id).subscribe((res : any) => {
       this.item = res;
-      this.ownerID = res.id;
-      console.log(res.id);
+      this.ownerID = res.userID;
     });
     this.itemService.getItemFromUser(this.userID).subscribe((res : any) => {
-      console.log(res);
       this.userItems = res;
     });
   }

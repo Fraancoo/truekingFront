@@ -7,22 +7,16 @@
   <ion-item class="no-lines">
     <ion-label class="big-text">Tradding offers...</ion-label>
   </ion-item>
-  <div class="notification" (click)="seeOffer()">
+  <div class="notification" *ngFor="let i of requests" (click)="seeOffer(i.id)">
     <div class="left">
-      <img class="photo" src="https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png">
+      <img class="photo" src="{{i.bidder.photo}}">
     </div>
     <div class="right">
-      <p class="title">Item name (item owner)</p>
-      <p class="text">Item description</p>
-    </div>
-  </div>
-  <div class="notification myOffer">
-    <div class="left">
-      <img class="photo" src="../../../assets/img/stuff_1.jpg">
-    </div>
-    <div class="right">
-      <p class="title">Item name (yours)</p>
-      <p class="text">Item description</p>
+      <div class="title">
+        {{i.bidderItem.name}}
+        <span *ngIf="i.bidder.id == userID">(Yours)</span>
+      </div>
+      <div class="text">{{i.bidderItem.description}}</div>
     </div>
   </div>
 </ion-content>

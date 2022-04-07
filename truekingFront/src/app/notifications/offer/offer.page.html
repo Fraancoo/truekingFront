@@ -5,20 +5,22 @@
     </svg>
   </div>
   <div class="itemInfo">
-    <img class="itemPhoto" src="../../../assets/img/stuff_1.jpg">
+    <img class="itemPhoto" src="{{bidderItem.photo}}">
     <div class="itemDesc">
-      <p class="title">Item name</p>
-      <p class="text">Item description</p>
-      <p class="text">Item reason</p>
+      <p class="big-text">{{bidderItem.name}}</p>
+      <p class="text">{{bidderItem.description}}</p>
+      <p class="text">{{bidderItem.reason}}</p>
     </div>
   </div>
   <hr>
   <div class="userInfo">
-    <img class="photo" src="https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png">
-    <div class="big-text">Full name</div>
-    <p>Address</p>
+    <img class="photo" src="{{bidder.photo}}">
+    <div class="big-text">{{bidder.firstName}} {{bidder.lastName}}</div>
+    <p><b>({{bidder.phone}})</b></p>
+    <p>{{bidder.city}}, {{bidder.address1}}, {{bidder.address2}}, {{bidder.zipcode}}</p>
   </div>
   <div class="bottom">
-    <button class="button dark-button" [routerLink]="['/home']">Button</button>
+    <button class="button" (click)="replyOffer(3)">Decline offer</button>
+    <button class="button dark-button" (click)="replyOffer(1)">I want it!!!</button>
   </div>
 </ion-content>

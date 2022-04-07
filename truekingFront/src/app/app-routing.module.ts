@@ -64,7 +64,7 @@ const routes: Routes = [
     loadChildren: () => import('./notifications/offers/offers.module').then( m => m.OffersPageModule)
   },
   {
-    path: 'offer',
+    path: 'offers/:id',
     loadChildren: () => import('./notifications/offer/offer.module').then( m => m.OfferPageModule)
   },
   {
