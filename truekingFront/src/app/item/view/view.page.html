@@ -4,13 +4,34 @@
       <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
     </svg>
   </div>
-  <img class="itemImage" src="../../../assets/img/stuff_1.jpg">
+  <img class="itemImage" src="{{item.photo}}" style="margin-top: 10px;">
   <div class="labels">
-    <p class="title">Lorem Ipsum</p>
-    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.</p>
+    <p class="title">{{item.name}}</p>
+    <p class="text">{{item.description}}</p>
+    <p class="text">{{item.reason}}</p>
+    <p class="text"><b>I hope receive: </b>{{item.inReturn}}</p>
   </div>
-  <div class="" >
-    <button class="button" [routerLink]="['/home/main']">See more</button>
-    <button class="button dark-button" [routerLink]="['/home/main']">Let's trade!</button>
+  <div>
+    <hr>
+    <div>
+      <img src="{{owner.photo}}" class="photo">
+      <div class="name">
+        {{owner.firstName}} {{owner.lastName}}
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      *ngIf="userID == owner.id"
+      class="button dark-button"
+      (click)="requestTrade(item.id)">
+        Edit item
+    </button>
+    <button
+      *ngIf="userID != owner.id"
+      class="button dark-button"
+      (click)="requestTrade(item.id)">
+        Let's trade!
+    </button>
   </div>
 </ion-content>

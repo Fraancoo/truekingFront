@@ -10,8 +10,11 @@
           <img class="img" src="{{i.photo}}" />
           <strong class="gray">{{i.name}}</strong>
           <p class="gray">{{i.description}}</p>
-          <div class="center">
-            <button class="button light-button">See more</button>
+          <div class="center" *ngIf="i.userID == userID">
+            <button class="button light-button" (click)="viewItem(i.id)">Edit item</button>
+          </div>
+          <div class="center" *ngIf="i.userID != userID">
+            <button class="button light-button" (click)="viewItem(i.id)">See more</button>
             <button class="button dark-button" (click)="requestTrade(i.id)">Lets trade!</button>
           </div>
         </div>

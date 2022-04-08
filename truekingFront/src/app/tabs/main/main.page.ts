@@ -9,6 +9,7 @@ import { ItemsService } from '../../services/items.service';
 })
 export class MainPage implements OnInit {
 
+  public userID = localStorage.getItem('userID');
   public items: Array<any> = [];
 
   constructor(private route:Router, private itemService:ItemsService ) {
@@ -18,6 +19,12 @@ export class MainPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  viewItem(id: any){
+    console.log(id);
+    this.route.navigate(['/view/'+id]);
+    
   }
 
   requestTrade(id: any){

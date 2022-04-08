@@ -56,7 +56,7 @@ const routes: Routes = [
     loadChildren: () => import('./item/edit/edit.module').then( m => m.EditPageModule)
   },
   {
-    path: 'view',
+    path: 'view/:id',
     loadChildren: () => import('./item/view/view.module').then( m => m.ViewPageModule)
   },
   {
