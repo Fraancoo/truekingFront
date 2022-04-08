@@ -46,7 +46,7 @@ export class RequestsService {
       bidderItem: bidderItem.id,
       ownerItem: ownerItem.id
     }).subscribe((res: any) => {
-      this.router.navigate(['/offers']);
+      this.router.navigate(['/information/'+id]);
     });
   }
 }

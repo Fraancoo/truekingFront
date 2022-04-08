@@ -19,7 +19,19 @@
     <p><b>({{bidder.phone}})</b></p>
     <p>{{bidder.city}}, {{bidder.address1}}, {{bidder.address2}}, {{bidder.zipcode}}</p>
   </div>
-  <div class="bottom">
+  <p class="big-text" style="width: 100%; text-align: center;">In exchange of</p>
+  <hr>
+  <div class="itemInfo" style="margin-bottom: 100px;">
+    <img class="itemPhoto" src="{{ownerItem.photo}}">
+    <div class="itemDesc">
+      <p class="big-text">{{ownerItem.name}}</p>
+    </div>
+  </div>
+  <div class="bottom" *ngIf="userID == bidder.id">
+    <button class="button red-button" (click)="replyOffer(3)">Delete offer</button>
+    <button class="button dark-button" (click)="replyOffer(1)">Edit offer</button>
+  </div>
+  <div class="bottom" *ngIf="userID != bidder.id">
     <button class="button" (click)="replyOffer(3)">Decline offer</button>
     <button class="button dark-button" (click)="replyOffer(1)">I want it!!!</button>
   </div>

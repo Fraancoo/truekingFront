@@ -1,0 +1,31 @@
+<ion-content>
+  <div (click)="home()" style="width: 100%; text-align: center;">
+    <br><svg xmlns="http://www.w3.org/2000/svg" width="161" height="47" viewBox="0 0 161 47">
+      <text id="Trueking" transform="translate(0 37)" fill="#006DFF" font-size="40" font-family="ImprintMT-Shadow, Imprint MT Shadow"><tspan x="0" y="0">Trueking</tspan></text>
+    </svg>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <img class="photo" src="{{user.photo}}"/>
+  </div>
+  <div class="text" style="text-align: center;">{{user.firstName}}</div>
+  <div class="text" style="text-align: center;">{{user.lastName}}</div>
+  <ion-item class="no-lines">
+    <div class="text" style="margin-top: 20px;">Change...</div>
+  </ion-item>
+  <ion-item>
+    <ion-label>Name</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Address</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Email</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+  </ion-item>
+
+  <ion-item class="bottom">
+    <ion-label style="color: #F44336;" (click)="logout()">Log out</ion-label>
+  </ion-item>
+</ion-content>

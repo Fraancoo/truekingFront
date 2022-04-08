@@ -1,0 +1,26 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.no-lines {
+    --border-width: 0;
+    --inner-border-width: 0;
+    --padding-bottom: 0;
+}
+
+.photo {
+    width: 175px;
+    border-radius: 45%;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    font-size: 20pt;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}

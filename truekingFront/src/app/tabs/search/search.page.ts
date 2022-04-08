@@ -29,8 +29,8 @@ export class SearchPage implements OnInit {
     });
   }
 
-  viewItem(){
-    this.route.navigate(['/view']);
+  viewItem(id: any){
+    this.route.navigate(['/view/'+id]);
   }
 
   removeTag(id) {

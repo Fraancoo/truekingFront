@@ -1,3 +1,20 @@
 <ion-content>
-
-</ion-content>
+    <div class="top">
+      <div class="top-text">
+          Treade accepted
+      </div>
+      <div style="width: 100%; text-align: center;">
+          <img class="itemPhoto" src="{{bidderItem.photo}}">
+          <img class="itemPhoto left" src="{{ownerItem.photo}}">
+      </div>
+    </div>
+    <div style="width: 100%; text-align: center;">
+        <p>For any inconvenience, contact the administrator</p>
+        <p class="big-text">664 553 0760</p>
+        <p style="font-size: 14pt;">0318120760@ut-tijuana.edu.mx</p>
+        <p class="big-text">Request ID: {{id}}</p>
+    </div>
+    <div class="bottom">
+        <button class="button dark-button" [routerLink]="['/']">Exit</button>
+    </div>
+  </ion-content>

@@ -13,18 +13,16 @@ export class MainPage implements OnInit {
   public items: Array<any> = [];
 
   constructor(private route:Router, private itemService:ItemsService ) {
+  }
+
+  ngOnInit() {
     this.itemService.getItems().subscribe((res : any) => {
       this.items = res;
     });
   }
 
-  ngOnInit() {
-  }
-
   viewItem(id: any){
-    console.log(id);
     this.route.navigate(['/view/'+id]);
-    
   }
 
   requestTrade(id: any){

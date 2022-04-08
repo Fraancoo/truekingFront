@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/search/search.module').then( m => m.SearchPageModule)
   },
   {
-    path: 'information',
+    path: 'information/:id',
     loadChildren: () => import('./trade/information/information.module').then( m => m.InformationPageModule)
   },
   {
@@ -71,6 +71,11 @@ const routes: Routes = [
     path: 'information',
     loadChildren: () => import('./notifications/information/information.module').then( m => m.InformationPageModule)
   },
+  {
+    path: 'settings',
+    loadChildren: () => import('./account/settings/settings.module').then( m => m.SettingsPageModule)
+  },
+
 
 ];
 

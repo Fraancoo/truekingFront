@@ -10,6 +10,7 @@ import { RequestsService } from '../../services/requests.service';
 export class OfferPage implements OnInit {
 
   public id = <string>this.activeRoute.snapshot.params.id;
+  public userID = localStorage.getItem('userID')
   public bidder = [];
   public bidderItem = [];
   public owner = [];

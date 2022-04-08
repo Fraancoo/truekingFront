@@ -4,7 +4,7 @@
       <ion-icon class="top-icons" name="notifications-sharp" [routerLink]="['/offers']"></ion-icon>
     </div>
     <div>
-      <ion-icon class="top-icons" name="settings-sharp"></ion-icon>
+      <ion-icon class="top-icons" name="settings-sharp" [routerLink]="['/settings']"></ion-icon>
     </div>
   </div>
   <div style="text-align: center;">
@@ -21,7 +21,7 @@
       <ion-icon name="add-circle-outline"></ion-icon>
     </button>
     <div (click)="viewItem()" *ngFor="let i of user.items">
-      <img class="card" src="{{i.photo}}">
+      <img class="card" src="{{i.photo}}" (click)="viewItem(i.id)">
     </div>
   </div>
   <div class="text" style="margin-left: 15px;">

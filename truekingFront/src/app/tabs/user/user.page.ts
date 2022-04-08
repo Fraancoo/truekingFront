@@ -11,18 +11,17 @@ export class UserPage implements OnInit {
 
   public user: Array<any> = [];
   public userID = localStorage.getItem('userID');
-
-  constructor(private route:Router, private userService:UserService) {
+  
+  constructor(private route:Router, private userService:UserService) {}
+  
+  ngOnInit() {
     this.userService.getUser(this.userID).subscribe((res : any) => {
       this.user = res;
     });
   }
 
-  ngOnInit() {
-  }
-
-  viewItem(){
-    this.route.navigate(['/view']);
+  viewItem(id: any){
+    this.route.navigate(['/view/'+id]);
   }
 
 }

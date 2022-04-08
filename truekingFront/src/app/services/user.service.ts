@@ -25,7 +25,9 @@ export class UserService {
   
   logout() {
     localStorage.removeItem('userID');
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login']).then(() => {
+      window.location.reload();
+    });
   }
 
   getUser(id: any) {

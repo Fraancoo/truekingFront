@@ -11,6 +11,6 @@
     <button class="tag" *ngFor="let t of tags" (click)="selectTag(t.id)">+ | {{t.name}}</button>
   </ion-item> -->
   <div>
-    <img class="stuff" *ngFor="let i of items" (click)="viewItem()" src="{{i.photo}}">
+    <img class="stuff" *ngFor="let i of items" (click)="viewItem(i.id)" src="{{i.photo}}">
   </div>
 </ion-content>
